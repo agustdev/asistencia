@@ -25,7 +25,7 @@
             <div class="representante hidden mt-4">
                 <h3>En caso de asistir otra persona:</h3>
                 <x-label class="text-3xl">Nombre del representante</x-label>
-                <x-input class="block w-full mt-2" wire:model='representante'></x-input>
+                <x-input class="block w-full mt-2 uppercase" wire:model='representante'></x-input>
             </div>
         </x-slot>
         <x-slot name="footer">

@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('invitados', function (Blueprint $table) {
             $table->id();
-            $table->string('id_institucion');
             $table->string('nombre_completo');
-            $table->enum('asisitio', ['Si', 'No'])->default('No');
+            $table->string('posicion')->nullable();
+            $table->string('correo')->unique()->nullable();
+            $table->string('telefono')->nullable();
+            $table->enum('asistio', ['Si', 'No', 'Otro'])->default('No');
             $table->timestamps();
         });
     }

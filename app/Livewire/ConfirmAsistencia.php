@@ -27,7 +27,7 @@ class ConfirmAsistencia extends Component
         if ($this->representante != '') {
             $this->invitado->asistio = 'Otro';
             representantes::create([
-                'id_institucion' => $this->invitado->id_institucion,
+                'id_institucion' => 0,
                 'nombre_completo' => $this->representante,
                 'id_invitado' => $this->invitado->id
             ]);
