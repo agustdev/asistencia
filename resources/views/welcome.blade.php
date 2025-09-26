@@ -1,1 +1,1 @@
-@livewire('show-instituciones')
+@livewire('show-invitados')

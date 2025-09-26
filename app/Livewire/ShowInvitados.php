@@ -14,10 +14,10 @@ class ShowInvitados extends Component
     public $institucion;
     protected $listeners = ['render'];
 
-    public function mount($institucion)
-    {
-        $this->institucion = $institucion;
-    }
+    // public function mount($institucion)
+    // {
+    //     $this->institucion = $institucion;
+    // }
     public function updatingSearch()
     {
         $this->resetPage();
@@ -25,11 +25,10 @@ class ShowInvitados extends Component
     public function render()
     {
 
-        $insti = instituciones::where('id', $this->institucion)->first();
-        $invitados = Invitados::where('id_institucion', $insti->id)
-            ->where('nombre_completo', 'like', '%' . $this->search . '%')
+        // $insti = instituciones::where('id', $this->institucion)->first();
+        $invitados = Invitados::where('nombre_completo', 'like', '%' . $this->search . '%')
             ->paginate(10);
 
-        return view('livewire.show-invitados', compact('invitados', 'insti'));
+        return view('livewire.show-invitados', compact('invitados'));
     }
 }

@@ -2,23 +2,20 @@
     <x-guest-layout>
         <h3
             class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-blue-900 md:text-5xl lg:text-6xl text-center lg:text-start p-4 uppercase">
-            Sistema de Registro de Asistencia a Evento, ARD.
+            Sistema de Registro de Asistencia a Evento, Veteranos RD
             <div class="border-2 border-purple-900"></div>
         </h3>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="mx-auto content-center items-center mb-2">
                 <div class="grid grid-cols-2 gap-2 items-center justify-center md:flex lg:flex">
-                    <img src="{{ asset('images/red-mamla.png') }}" alt="">
-                    <img src="{{ asset('images/women-maritime.png') }}" alt="">
-                    <img src="https://portuaria.gob.do/wp-content/uploads/2021/02/LOGODARK.png" alt=""
-                        width="200" class="mr-4">
-                    <img src="https://armada.mil.do/wp-content/uploads/2024/07/logo_armada-min-283x300-1.png"
-                        alt="" width="100" class="rounded-full">
+                    <img src="https://congresomundial.veteranosrd.com/wp-content/uploads/2025/06/logo_hermamdad150x150_V2.webp"
+                        alt="logo hermandad de veteranos" width="170">
+                    <img src="https://congresomundial.veteranosrd.com/wp-content/uploads/2025/09/logo-hermandad.png"
+                        alt="logo congreso mundial de veteranos" width="170">
                 </div>
                 <div class="text-center font-extrabold text-lg">
-                    <h1 class="border-b-2 border-pink-900 text-pink-600 mb-3 py-3">MUJERES DOMINICANAS LIDERANDO LA
-                        TRANSFORMACION DE
-                        LA INDUSTRIA LOGISTICA, MARITIMA Y PORTUARIA
+                    <h1 class="border-b-2 border-blue-900 text-blue-600 mb-3 py-3">1ER. CONGRESO MUNDIAL DE VETERANOS DE
+                        LAS FF.AA. Y PN.
                     </h1>
                     <h1 class="uppercase font-extrabold">Instituciones Invitadas</h1>
                 </div>

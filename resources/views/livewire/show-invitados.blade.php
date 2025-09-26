@@ -2,25 +2,22 @@
     <x-guest-layout>
         <h3
             class="uppercase mb-4 text-3xl font-extrabold leading-none tracking-tight text-blue-900 md:text-5xl lg:text-4xl text-center lg:text-start p-4">
-            Sistema de Registro de Asistencia a Evento, ARD.
+            Sistema de Registro de Asistencia a Evento, Veteranos RD
             <div class="border-2 border-purple-900"></div>
         </h3>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="mx-auto content-center items-center">
                 <div class="grid grid-cols-2 gap-2 items-center justify-center md:flex lg:flex">
-                    <img src="{{ asset('images/red-mamla.png') }}" alt="">
-                    <img src="{{ asset('images/women-maritime.png') }}" alt="">
-                    <img src="https://portuaria.gob.do/wp-content/uploads/2021/02/LOGODARK.png" alt=""
-                        width="200" class="mr-4">
-                    <img src="https://armada.mil.do/wp-content/uploads/2024/07/logo_armada-min-283x300-1.png"
-                        alt="" width="100" class="rounded-full">
+                    <img src="https://congresomundial.veteranosrd.com/wp-content/uploads/2025/06/logo_hermamdad150x150_V2.webp"
+                        alt="logo hermandad de veteranos" width="170">
+                    <img src="https://congresomundial.veteranosrd.com/wp-content/uploads/2025/09/logo-hermandad.png"
+                        alt="logo congreso mundial de veteranos" width="170">
                 </div>
                 <div class="text-center font-extrabold text-lg">
-                    <h1 class="border-b-2 border-pink-900 text-pink-600 mb-3 py-3">MUJERES DOMINICANAS LIDERANDO LA
-                        TRANSFORMACION DE
-                        LA INDUSTRIA LOGISTICA, MARITIMA Y PORTUARIA
+                    <h1 class="border-b-2 border-blue-900 text-blue-600 mb-3 py-3">1ER. CONGRESO MUNDIAL DE VETERANOS DE
+                        LAS FF.AA. Y PN.
                     </h1>
-                    <h1 class="uppercase font-extrabold">Invitados al evento - {{ $insti->nombre }}</h1>
+                    <h1 class="uppercase font-extrabold">Invitados al evento</h1>
                 </div>
             </div>
 
@@ -28,7 +25,7 @@
                 <div class="px-6 py-4 flex items-center">
                     <x-input wire:model.live='search' type="text" class="uppercase flex-1 mx-4"
                         placeholder="Buscar invitado"></x-input>
-                    @livewire('create-invite', ['institucion' => $institucion], key(request()->route()->institucion))
+                    @livewire('create-invite', key('create-invite'))
                     <a href="{{ url('/') }}"
                         class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150">
                         Volver
