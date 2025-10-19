@@ -36,7 +36,7 @@
         @push('js')
             <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
             <script>
-                $('.asistencia').on('click', function() {
+                $(document).on('click', '.asistencia', function() {
                     if ($(this).val() != 'Si') {
                         $('.representante').show();
                     } else {

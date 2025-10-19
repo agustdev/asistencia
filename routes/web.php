@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AsistenciasController;
 use App\Http\Controllers\InstitucionesController;
 use App\Livewire\ShowInvitados;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,9 @@ Route::get('/', function () {
 Route::get('ver-listado/{institucion}', function () {
     return view('invitados');
 })->name('ver.listado');
+
+
+Route::get('invitados/{invitado}', [AsistenciasController::class, 'certificate'])->name('invitados.certificate');
 
 // Route::resource('');
 

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Asistencias;
+use App\Models\Invitados;
 use Illuminate\Http\Request;
+use PDF;
 
 class AsistenciasController extends Controller
 {
@@ -13,6 +15,15 @@ class AsistenciasController extends Controller
     public function index()
     {
         //
+    }
+
+    public function certificate(Invitados $invitado)
+    {
+        $pdf = PDF::loadview('certificate', compact('invitado'), [], [
+            'orientation' => 'landscape',
+            'author' => 'Hermandad de Veteranos Pensionados de las FF.AA. y P.N.',
+        ]);
+        return $pdf->stream('certificate-invitado' . $invitado->id . '.pdf');
     }
 
     /**
